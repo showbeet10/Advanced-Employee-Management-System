@@ -129,6 +129,4 @@ with app.app_context():
 | `/department/update/<id>` | Edit a department |
 | `/department/delete/<id>` | Delete a department |
 
-## Assignment Verification
 
-Before submission, verify CRUD, pagination, search, all sorting options, department filtering, salary range filtering, combined query behavior, responsive UI, and flash messages. Then push the latest project to your GitHub repository and submit that repository URL.
