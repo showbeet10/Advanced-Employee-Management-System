@@ -34,14 +34,10 @@ A Flask + SQLite Employee Management System extended from the provided Flask Dev
 ## Screenshots
 
 ### 🏠 Dashboard
-![Dashboard](screenshots/dashboard.png)
-
-> Live dashboard showing real-time counts of total employees and departments with quick navigation cards.
+<img src="screenshots/dashboard.png" alt="Dashboard" width="100%">
 
 ### 👥 Employee List
-![Employee List](screenshots/employee_list.png)
-
-> Employee list page with advanced search, department filter, salary range filter, sorting, and pagination. Flash messages confirm successful CRUD operations.
+<img src="screenshots/employee_list.png" alt="Employee List" width="100%">
 
 ---
 
