@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container fade-in-up py-4">
+    <h2 class="mb-4">Dashboard</h2>
+    <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 rounded-4 hover-scale">
+                <div class="card-body p-4 d-flex flex-column">
+                    <h5 class="card-title fw-bold text-primary mb-3">Total Employees</h5>
+                    <h2 class="display-5 fw-bold mb-3">{{ emp_count }}</h2>
+                    <p class="card-text text-muted flex-grow-1">Manage and view all employee records across different departments.</p>
+                    <a href="/employee/list" class="btn btn-outline-primary mt-auto">View Employees</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 rounded-4 hover-scale">
+                <div class="card-body p-4 d-flex flex-column">
+                    <h5 class="card-title fw-bold text-success mb-3">Departments</h5>
+                    <h2 class="display-5 fw-bold mb-3">{{ dept_count }}</h2>
+                    <p class="card-text text-muted flex-grow-1">Overview of organizational structure and department divisions.</p>
+                    <a href="/department" class="btn btn-outline-success mt-auto">View Departments</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

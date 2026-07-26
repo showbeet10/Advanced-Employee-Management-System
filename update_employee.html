@@ -1,0 +1,42 @@
+{% extends "base.html" %} 
+{% block content %}
+<div class="container py-5 fade-in-up">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="card shadow-sm border-0 rounded-4">
+        <div class="card-header bg-white border-bottom-0 pt-4 pb-0">
+          <h3 class="mb-0">Update Employee</h3>
+        </div>
+        <div class="card-body p-4">
+          <form action="/employee/employeeUpdate/{{employee.id}}" method="POST">
+              <div class="mb-3">
+                  <label class="form-label fw-semibold">Name</label>
+                  <input type="text" name="name" value="{{employee.name}}" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                  <label class="form-label fw-semibold">Email</label>
+                  <input type="email" name="email" value="{{employee.email}}" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                  <label class="form-label fw-semibold">Password</label>
+                  <input type="password" name="password" value="{{employee.password}}" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                  <label class="form-label fw-semibold">Salary</label>
+                  <input type="text" name="salary" value="{{employee.salary}}" class="form-control" required>
+              </div>
+              <div class="mb-4">
+                  <label class="form-label fw-semibold">Department</label>
+                  <input type="text" name="department" value="{{employee.department}}" class="form-control" required>
+              </div>
+              <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-warning w-50">Update</button>
+                <button type="reset" class="btn btn-outline-secondary w-50">Reset</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

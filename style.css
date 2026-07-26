@@ -1,0 +1,52 @@
+/* Interactive UI Animations & Effects */
+
+.custom-bg {
+    background: linear-gradient(135deg, #e0eaf5 0%, #f4f6f9 100%);
+    background-attachment: fixed;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.03) !important;
+}
+
+.hover-scale {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hover-scale:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.table-hover tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.nav-link {
+    transition: color 0.2s ease-in-out, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.05);
+}

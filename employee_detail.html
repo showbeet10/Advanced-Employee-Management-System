@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5 fade-in-up">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow border-0 rounded-4 text-center">
+        <div class="card-body p-5">
+            <h6 class="text-muted mb-3">Employee ID: {{employee.id}}</h6>
+            <h2 class="mb-1">{{employee.name}}</h2>
+            <p class="text-primary mb-4">{{employee.department}}</p>
+            
+            <hr class="my-4">
+            
+            <div class="d-flex justify-content-center gap-4 mb-4">
+              <div>
+                <small class="text-muted d-block">Email</small>
+                <strong>{{employee.email}}</strong>
+              </div>
+              <div>
+                <small class="text-muted d-block">Salary</small>
+                <strong>${{ "{:,.2f}".format(employee.salary) }}</strong>
+              </div>
+            </div>
+            
+            <a href="/employee/list" class="btn btn-primary px-4">Go Back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
