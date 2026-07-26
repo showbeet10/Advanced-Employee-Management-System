@@ -31,6 +31,20 @@ A Flask + SQLite Employee Management System extended from the provided Flask Dev
 - Bootstrap Tooltips on all action buttons
 - Live dashboard showing real-time employee and department counts
 
+## Screenshots
+
+### 🏠 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+> Live dashboard showing real-time counts of total employees and departments with quick navigation cards.
+
+### 👥 Employee List
+![Employee List](screenshots/employee_list.png)
+
+> Employee list page with advanced search, department filter, salary range filter, sorting, and pagination. Flash messages confirm successful CRUD operations.
+
+---
+
 ## Project Structure
 
 ```text
@@ -59,6 +73,9 @@ app/
 │   └── update_department.html # Edit department form
 └── __init__.py              # App factory (create_app)
 migrations/
+screenshots/
+│   ├── dashboard.png        # Dashboard page screenshot
+│   └── employee_list.png    # Employee list page screenshot
 app.py                       # Application entry point
 config.py                    # Configuration (DB URI, Secret Key)
 requirements.txt             # Python dependencies
@@ -129,4 +146,6 @@ with app.app_context():
 | `/department/update/<id>` | Edit a department |
 | `/department/delete/<id>` | Delete a department |
 
+## Assignment Verification
 
+Before submission, verify CRUD, pagination, search, all sorting options, department filtering, salary range filtering, combined query behavior, responsive UI, and flash messages. Then push the latest project to your GitHub repository and submit that repository URL.
